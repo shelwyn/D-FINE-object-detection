@@ -49,13 +49,22 @@ pip install opencv-python pillow
 
 ## Usage
 
-```bash
-python detect_objects.py
-```
 This script will Detect objects in an image and print them on the console
 
 ```bash
+python detect_objects.py
+```
+
+This script will Detect objects in an image and label each object with class name and confidence score
+
+```bash
 python detect_objects_and_label_image.py
+```
+
+This script will Detect objects from a live feed (camera) and label each object with class name and confidence score
+
+```bash
+python detect_objects_from_live_feed.py
 ```
 
 This script will Detect objects, Draw bounding boxes around detected objects, Label each object with its class name and confidence score and Save the annotated image as "annotated_image.jpg"
