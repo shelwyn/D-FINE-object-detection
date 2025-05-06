@@ -43,3 +43,29 @@ pip install git+https://github.com/huggingface/transformers.git
 
 # Install other required packages
 pip install opencv-python pillow
+```
+
+## Usave
+
+```bash
+python detect_objects.py
+```
+This script will Detect objects in an image and print them on the console
+
+```bash
+python detect_objects_and_label_image.py
+```
+
+This script will Detect objects, Draw bounding boxes around detected objects, Label each object with its class name and confidence score and Save the annotated image as "annotated_image.jpg"
+
+## Requirements
+
+- Python 3.9+
+- PyTorch
+- Hugging Face Transformers (latest version)
+- OpenCV
+- PIL/Pillow
+
+  
+## Troubleshooting
+If you encounter SSL certificate verification errors, the scripts include workarounds to bypass SSL verification. Note that disabling SSL verification is not recommended for production environments.
