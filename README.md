@@ -81,4 +81,5 @@ This script will Detect objects, Draw bounding boxes around detected objects, La
 ## Troubleshooting
 If you encounter SSL certificate verification errors, the scripts include workarounds to bypass SSL verification. Note that disabling SSL verification is not recommended for production environments.
 
-![Image 1](1.jpeg)
+![Image 1](1.jpg)
+![Image 2](2.jpg)
