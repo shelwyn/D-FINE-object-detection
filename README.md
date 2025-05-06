@@ -1,21 +1,45 @@
-# D-FINE-object-detection
-A real-time object detection implementation using the D-FINE (Fine-grained Distribution Refinement) model from Hugging Face's transformers library. This repository demonstrates how to use state-of-the-art transformer-based object detection models for both static images and live video feeds.
+# D-FINE Object Detection System
 
+A real-time object detection implementation that leverages the D-FINE (Fine-grained Distribution Refinement) model architecture. This repository demonstrates how to use state-of-the-art transformer-based object detection for both static images and live camera feeds.
 
-Object detection on static images with bounding box visualization
-Real-time object detection from webcam feed
-Support for the D-FINE model, which offers excellent accuracy and speed
-Performance metrics display (FPS counter for video)
-Configurable detection confidence threshold
-Color-coded bounding boxes and labels for different object categories
+## About D-FINE
 
-Requirements
+D-FINE is a powerful object detection model that employs Fine-grained Distribution Refinement (FDR) and Global Optimal Localization Self-Distillation (GO-LSD) techniques to achieve high precision in object localization. It represents an advancement over traditional DETR (DEtection TRansformer) architecture by refining probability distributions iteratively rather than predicting fixed coordinates.
 
-Python 3.9+
-PyTorch
-Hugging Face Transformers (latest version from GitHub)
-OpenCV (for camera feed)
-PIL/Pillow (for image processing)
+## Features
 
-Background
-D-FINE is a powerful object detection model that employs Fine-grained Distribution Refinement (FDR) and Global Optimal Localization Self-Distillation (GO-LSD) to achieve high localization precision. It improves upon the DETR (DEtection TRansformer) architecture by transforming the regression process from predicting fixed coordinates to iteratively refining probability distributions
+- Object detection on static images with visualized bounding boxes
+- Real-time object detection from webcam feed
+- High accuracy detection with configurable confidence threshold
+- Color-coded bounding boxes and labels for different object categories
+- Support for 80+ COCO dataset object categories
+
+## Installation
+
+```bash
+# Clone this repository
+git clone https://github.com/shelwyn/D-FINE-object-detection.git
+cd D-FINE-object-detection
+
+# Create and activate virtual environment
+python -m venv dfine_venv
+
+# On Windows:
+dfine_venv\Scripts\activate
+
+# On macOS/Linux:
+# source dfine_venv/bin/activate
+
+# Clone the D-FINE repository
+git clone https://github.com/Peterande/D-FINE.git
+
+# Install D-FINE requirements
+cd D-FINE
+pip install -r requirements.txt
+cd ..
+
+# Install the latest transformers library from GitHub
+pip install git+https://github.com/huggingface/transformers.git
+
+# Install other required packages
+pip install opencv-python pillow
