@@ -45,7 +45,7 @@ pip install git+https://github.com/huggingface/transformers.git
 pip install opencv-python pillow
 ```
 
-## Usave
+## Usage
 
 ```bash
 python detect_objects.py
