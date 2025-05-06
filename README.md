@@ -17,6 +17,8 @@ D-FINE is a powerful object detection model that employs Fine-grained Distributi
 ## Installation
 
 ```bash
+pip install opencv-python
+
 # Clone this repository
 git clone https://github.com/shelwyn/D-FINE-object-detection.git
 cd D-FINE-object-detection
